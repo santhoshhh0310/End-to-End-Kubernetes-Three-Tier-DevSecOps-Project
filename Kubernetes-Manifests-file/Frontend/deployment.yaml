@@ -7,7 +7,7 @@ metadata:
     role: frontend
     env: demo
 spec: 
-  replicas: 2
+  replicas: 3
   strategy:
     type: RollingUpdate
     rollingUpdate:
@@ -32,8 +32,3 @@ spec:
             value: "http://k8s-threetie-mainlb-1dd958d0ec-1497875369.us-east-2.elb.amazonaws.com/api/tasks"
         ports:
         - containerPort: 3000
-
-
-
-
-This is testing yaml file to check the repo difference after commiting changes
